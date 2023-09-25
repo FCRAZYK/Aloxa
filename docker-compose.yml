@@ -1,0 +1,10 @@
+version: '2'
+services:
+  aloxa123:
+    image: 'aloxa123/aloxa123:latest'
+    environment:
+      - "PORT:3000"
+    ports:
+      - "80:3000"
+    volumes:
+      - ./:/app
